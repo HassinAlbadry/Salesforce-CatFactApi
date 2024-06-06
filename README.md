@@ -1,18 +1,21 @@
-# Salesforce DX Project: Next Steps
+Salesforce Cat Facts Integration:
+This project integrates Salesforce with an external API to fetch cat facts and store them in a custom Salesforce object.
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+Prerequisites:
+Salesforce Developer Org
+Salesforce Developer Console or VS Code with Salesforce extensions
+API key for the external API (if required)
 
-## How Do You Plan to Deploy Your Changes?
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+Custom Object:
+Create a custom object in Salesforce named Cat_Fact__c with the following fields:
 
-## Configure Your Salesforce DX Project
+-Fact__c (Text)
+-Length__c (Decimal)
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
 
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+Usage:
+Deploy the  AuthCallout & CatFactFetcherController classes to your Salesforce org.
+Create the custom object and fields as specified.
+Add provided visual force page to your org. 
+view page and start clicking button to make connection to api and see updated result from custom object
