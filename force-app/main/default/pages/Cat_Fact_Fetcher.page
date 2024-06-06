@@ -1,0 +1,19 @@
+<apex:page controller="CatFactFetcherController">
+    <apex:form >
+        <apex:pageBlock title="Fetch Cat Facts">
+            <apex:pageBlockSection >
+                <apex:commandButton value="Fetch Cat Facts" action="{!fetchCatFacts}"/>
+            </apex:pageBlockSection>
+           
+        </apex:pageBlock>
+        
+        
+        <apex:pageBlock >
+        <apex:pageBlockTable value="{!Facts}" var="o">
+            <apex:column value="{!o.Fact__c}"/>
+            <apex:column value="{!o.Length__c}"/>
+           
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+    </apex:form>
+</apex:page>
